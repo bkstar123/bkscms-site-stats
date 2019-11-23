@@ -30,15 +30,15 @@ Then, publish the package's configuration & assets:
 
 In the underlaying layer, it uses ***spatie/laravel-analytics*** package to retrieve data from Google Analytics. Please refer to https://github.com/spatie/laravel-analytics for more details on how to obtain the credentials to communicate with Google Analytics.  
 
-You can also tweak ***spatie/laravel-analytics***'s configuration by publishing its assets to ***config/analytics.php***as follows:  
+You can also tweak **spatie/laravel-analytics**'s configuration by publishing its assets to **config/analytics.php** as follows:  
 ```php artisan vendor:publish --provider="Spatie\Analytics\AnalyticsServiceProvider"```.  
 
 ## 3. Usage
 
-In **.env**, set the environment variable **ANALYTICS_VIEW_ID** to the value of ***View ID*** of the monitored site on Google Analytics console.  
+In **.env**, set the environment variable **ANALYTICS_VIEW_ID** to the value of **View ID** of the monitored site on Google Analytics console.  
 
-Download ***service-account-credentials.json*** file from Google Analytics, and put it to ***storage/app/analytics/service-account-credentials.json***.  
+Download **service-account-credentials.json** file from Google Analytics, and put it to **storage/app/analytics/service-account-credentials.json**.  
 
-The Google Analytics dashboard will be exposed under the path ***/cms/sitestatistics*** with the route name of **cms.sitestatistics**.  
+The Google Analytics dashboard will be exposed under the path **/cms/sitestatistics** with the route name of **cms.sitestatistics**.  
 
 Finally, you can add the link of the Google Analytics dashboard to the **/config/bkstar123_bkscms_sidebarmenu**.  
