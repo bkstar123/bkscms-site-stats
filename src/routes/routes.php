@@ -13,7 +13,7 @@ Route::group(
         ],
     ],
     function () {
-        Route::match(['get', 'post'], '/ga/index', 'GAController@index')
-            ->name('ga.index');
+        Route::match(['get', 'post'], '/sitestatistics', 'SiteStatsController@index')
+            ->name('cms.sitestatistics');
     }
 );

@@ -254,7 +254,7 @@
             </h3>
             <div class="card-body">
                 <form class="form-vertical" role="form" method="POST" 
-                    action="{{ route('ga.index') }}">
+                    action="{{ route('cms.sitestatistics') }}">
                     @csrf
                     <div class="row">
                         <div class="col-md-3">

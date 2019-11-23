@@ -11,7 +11,7 @@ use Spatie\Analytics\Period;
 use App\Http\Controllers\Controller;
 use Bkstar123\BksCMS\SiteStats\Contracts\GA;
 
-class GAController extends Controller
+class SiteStatsController extends Controller
 {
 
     /**
@@ -74,8 +74,6 @@ class GAController extends Controller
     }
 
     /**
-     * index method
-     *
      * @return \Illuminate\Http\Response
     */
     public function index()
