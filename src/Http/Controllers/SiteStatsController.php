@@ -13,7 +13,6 @@ use Bkstar123\BksCMS\SiteStats\Contracts\GA;
 
 class SiteStatsController extends Controller
 {
-
     /**
      * @var \Bkstar123\BksCMS\SiteStats\Services\GA
      */
@@ -32,6 +31,7 @@ class SiteStatsController extends Controller
      * Create instance
      *
      * @param App\Modules\GA\Contracts\GA $ga
+     * @return void
      */
     public function __construct(GA $ga)
     {
@@ -54,7 +54,7 @@ class SiteStatsController extends Controller
     }
 
     /**
-     * get the specified time range
+     * Get the specified time range
      *
      * @return Spatie\Analytics\Period
      */
@@ -75,7 +75,7 @@ class SiteStatsController extends Controller
 
     /**
      * @return \Illuminate\Http\Response
-    */
+     */
     public function index()
     {
         $timeRange = $this->getTimeRange();

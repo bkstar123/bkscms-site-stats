@@ -1,8 +1,6 @@
 /**
- * GA - Resources/Assets/js/gaActiveUsers.js
- *
  * @author: tuanha
- * @last-mod: 01/07/2017
+ * @last-mod: 01-July-2017
  */
  $(function () {
     Highcharts.theme = {
@@ -83,7 +81,7 @@
         xAxis: {
             title: {
                     text: 'Date',                   
-                },
+            },
             type: 'datetime',
             crosshair: true,
         },

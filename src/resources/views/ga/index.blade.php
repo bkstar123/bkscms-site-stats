@@ -298,21 +298,21 @@
 <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
 
 <script type="text/javascript">
-    var useUTC = {!! json_encode(config('bkstar123_bkscms_site_stats.useUTC')) !!};
-    var totalVisitorsPageViews = {!! json_encode($totalVisitorsPageViews) !!};
-    var mostVisistedPages = {!! json_encode($mostVisistedPages) !!};
-    var topBrowsers = {!! json_encode($topBrowsers) !!};
-    var topCountries = {!! json_encode($topCountries) !!};
-    var topOperatingSystems = {!! json_encode($topOperatingSystems) !!};
-    var oneDayActiveUsers = {!! json_encode($oneDayActiveUsers) !!};
-    var oneWeekActiveUsers = {!! json_encode($oneWeekActiveUsers) !!};
-    var oneMonthActiveUsers = {!! json_encode($oneMonthActiveUsers) !!};
+    var useUTC = @json(config('bkstar123_bkscms_site_stats.useUTC'));
+    var totalVisitorsPageViews = @json($totalVisitorsPageViews);
+    var mostVisistedPages = @json($mostVisistedPages);
+    var topBrowsers = @json($topBrowsers);
+    var topCountries = @json($topCountries);
+    var topOperatingSystems = @json($topOperatingSystems);
+    var oneDayActiveUsers = @json($oneDayActiveUsers);
+    var oneWeekActiveUsers = @json($oneWeekActiveUsers);
+    var oneMonthActiveUsers = @json($oneMonthActiveUsers);
 </script>
 
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaTotalVisitorsPageViews.js"></script>
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaMostVisistedPages.js"></script>
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaTopBrowsers.js"></script>
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaTopCountries.js"></script>
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaTopOperatingSystems.js"></script>
-<script src="/js/vendor/bkstar123_bkscms_site_stats/gaActiveUsers.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaTotalVisitorsPageViews.min.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaMostVisistedPages.min.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaTopBrowsers.min.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaTopCountries.min.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaTopOperatingSystems.min.js"></script>
+<script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaActiveUsers.min.js"></script>
 @endpush

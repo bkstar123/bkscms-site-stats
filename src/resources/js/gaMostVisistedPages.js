@@ -1,8 +1,6 @@
 /**
- * GA - Resources/Assets/js/gaMostVisistedPages.js
- *
  * @author: tuanha
- * @last-mod: 25/06/2017
+ * @last-mod: 25-June-2017
  */
  $(function () {
     Highcharts.createElement('link', {
