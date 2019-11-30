@@ -307,6 +307,17 @@
     var oneDayActiveUsers = @json($oneDayActiveUsers);
     var oneWeekActiveUsers = @json($oneWeekActiveUsers);
     var oneMonthActiveUsers = @json($oneMonthActiveUsers);
+    $(document).ready(function(){
+        $.datetimepicker.setLocale('en');
+        let settings = {
+            inline:false,
+            weeks: true,
+            format: 'Y-m-d',
+            timepicker : false,
+        }
+        $("#StartDate").datetimepicker(settings);
+        $("#EndDate").datetimepicker(settings);
+    });
 </script>
 
 <script src="/js/vendor/bkstar123_bkscms_site_stats/dist/gaTotalVisitorsPageViews.min.js"></script>
